@@ -2,12 +2,22 @@ body {
   padding-top: 80px;
 }
 
+.container {
+
+  width:100% !important;
+  height:200px            // <-- height of div
+
+  position: absolute;     // <-- important
+  left:0;                 // <-- make div to begin at left
+
+}
+
 .show-cart li {
   display: flex;
 }
 
 .card {
-  margin-bottom: 20px;
+  
   margin-left: -25px;
   margin-right: -25px;
 }
