@@ -75,11 +75,15 @@ padding: 0 0 0 0;
 }
 
 .row {
-
+padding: 0 0 0 0;
+width: 100%;
+margin: 0 0 0 0;
 }
 
 .card {
-
+margin-left: 0px;
+margin-right: 0px;
+padding: 0 0 0 0;
 }
 
 .box {
@@ -93,7 +97,6 @@ padding: 0 0 0 0;
   height: 200px;
 
 }
-
 
 .card-title {
 padding-left: 15px;
