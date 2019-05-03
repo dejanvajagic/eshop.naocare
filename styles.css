@@ -14,7 +14,7 @@ body {
   font-family: Questrial;
   font-size: 0.9rem;
   font-style: normal;
-  padding-top: 5px;
+  padding-top: 1px;
   z-index: 2;
 }
 
@@ -42,16 +42,12 @@ body {
 }
 
 .navbar-nav{
-  padding-left:30px;
-  padding-right:30px;
 }
 
 .navbar-toggler-icon  {
-
 }
 
 .cart-ikonica  {
-
 }
 
 .srce-ikonica  {
@@ -66,15 +62,12 @@ left: 0;
 }
 
 
-
 .show-cart li {
   display: flex
 }
 
 .artikli {
-  position: absolute;
-  width: 93% !important;
-  left: 4%;
+padding: 0 0 0 0;
 }
 
 .eshop {
@@ -87,8 +80,11 @@ left: 0;
 
 .card {
 
-  margin-left: -25px;
-  margin-right: -25px;
+}
+
+.box {
+  display:inline-block;
+  padding: 0 0 0 0;
 }
 
 .card-img-top {
@@ -96,4 +92,18 @@ left: 0;
   width: 200px;
   height: 200px;
 
+}
+
+
+.card-title {
+padding-left: 15px;
+}
+
+.card-text {
+padding-left: 15px;
+}
+
+.kupi {
+position: relative;
+left: 15px;
 }
