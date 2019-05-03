@@ -7,9 +7,6 @@
   font-size: 0.9rem;
   font-style: normal;
   padding-top: 5px;
-  position: absolute;
-  width:100% !important;
-  left: 0;
   z-index: 2;
 }
 
@@ -60,15 +57,15 @@
 }
 
 body {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  position: absolute;
+  width:100% !important;
 
 }
 
 .container {
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
-  width:100% !important;
-  height:200px
-  position: absolute;
+
 
 }
 
