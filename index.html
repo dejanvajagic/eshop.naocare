@@ -80,7 +80,8 @@
     </div>
     <div class="ikonice">
     <img src="images/logo/like-icon.png" class="srce-ikonica">&nbsp;&nbsp;&nbsp;
-    <img src="images/logo/cart-icon.png" class="cart-ikonica">&nbsp;&nbsp;&nbsp;
+    <img src="images/logo/cart-icon.png" class="cart-ikonica" data-target="#cart">
+    <button type="button" class="btn korpa" data-toggle="modal" data-target="#cart">Korpa [<span class="total-count"></span>]</button>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555">
     <span class="navbar-toggler-icon"></span>
     </button>
@@ -105,14 +106,6 @@
   </section>
 
   <section class="artikli">
-
-    <!-- Korpa meni -->
-    <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
-        <div class="row">
-            <div class="col">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Korpa (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Izbriši</button></div>
-        </div>
-    </nav>
 
     <!-- Main -->
     <div class="eshop">
@@ -274,7 +267,7 @@
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Vaša korpa | Poružbine</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -286,6 +279,7 @@
             <div>Ukupno: <span class="total-cart"></span> din.</div>
           </div>
           <div class="modal-footer">
+            <button type="button" class="clear-cart btn btn-dark">Izbriši poružbine</button>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Dodaj još proizvoda</button>
             <button type="button" class="btn btn-primary">Poruči sada</button>
           </div>
