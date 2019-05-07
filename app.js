@@ -1,6 +1,8 @@
+
 // ************************************************
 // Shopping Cart API
 // ************************************************
+
 
 var shoppingCart = (function() {
   // =============================
@@ -161,10 +163,10 @@ function displayCart() {
     output += "<tr>"
       + "<td>" + cartArray[i].name + "</td>"
       + "<td>(" + cartArray[i].price + ")</td>"
-      + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
+      + "<td><button class='delete-item btn btn-dark' data-name=" + cartArray[i].name + ">X</button></td>"
+      + "<tr><td><div class='input-group'><button class='minus-item input-group-addon btn btn-dark' data-name=" + cartArray[i].name + ">-</button>"
       + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
-      + "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"
-      + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
+      + "<button class='plus-item btn btn-dark input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"
       + " = "
       + "<td>" + cartArray[i].total + "</td>"
       +  "</tr>";
@@ -215,3 +217,44 @@ $('.show-cart').on("change", ".item-count", function(event) {
 });
 
 displayCart();
+
+// localStorage Cache Code
+function likedItemsIndexing (callback) {
+  setTimeout(function() {
+    $('.like_button').each(function(ids) {
+      $(this).attr('id', 'id-' + [ids].toString());
+    });
+    callback();
+  }, 500);
+}
+function likedItems() {
+  var all = document.querySelectorAll('.like_button');
+  for (var i = 0; i <= all.length; i++) {
+    var loadPage = localStorage.getItem(""+[i].toString());
+    if (loadPage == null) {
+    $("#id-"+[i].toString()+"").html('<i class="far fa-heart like"></i>');
+    } else {
+    $("#id-"+[i].toString()+"").html(loadPage);
+}}
+}
+
+  $(".like_button").click(function(){
+  if($(this).html() == '<i class="fas fa-heart like"></i>'){
+    var $unlike = '<i class="far fa-heart like"></i>';
+    $(this).html($unlike);
+
+    var copy2 =  $(this).html();
+    var replacer2 = $(this).attr("id");
+    replacer2 = replacer2.replace('id-','');
+    localStorage.setItem(replacer2, copy2);
+
+  }else if($(this).html() == '<i class="far fa-heart like"></i>'){
+  var $likes = '<i class="fas fa-heart like"></i>';
+  $(this).html($likes);
+
+  var copy =  $(this).html();
+  var replacer = $(this).attr("id");
+  replacer = replacer.replace('id-','');
+  localStorage.setItem(replacer, copy);
+}
+});

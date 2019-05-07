@@ -1,13 +1,18 @@
 
 body {
-  padding: 0 0 0 0;
+  padding: 85px 0 0 0;
   margin: 0 0 0 0;
   position: absolute;
   width:100% !important;
+}
 
+#cart-eshop{
+
+  font-family: Questrial;
 }
 
 .labela {
+  top: 0;
   background-color: #3D3D3D;
   color: white;
   text-align: center;
@@ -16,12 +21,15 @@ body {
   font-style: normal;
   padding-top: 1px;
   z-index: 2;
+  position: fixed;
+  width: 100%;
 }
 
 .meni {
   background-color: black;
   color: white !important;
   text-align: center;
+  z-index: 2;
 }
 
 .nav-link{
@@ -32,7 +40,6 @@ body {
 }
 
 .nav-link:hover {
-
 }
 
 
@@ -64,6 +71,11 @@ left: 0;
 
 .show-cart li {
   display: flex
+
+}
+
+.show-cart {
+  color: white;
 }
 
 .artikli {
@@ -80,42 +92,193 @@ width: 100%;
 margin: 0 0 0 0;
 }
 
-.card {
-margin-left: 0px;
-margin-right: 0px;
-padding: 0 0 0 0;
-}
-
 .box {
   display:inline-block;
   padding: 0 0 0 0;
 }
 
-.card-img-top {
-
-  width: 200px;
-  height: 200px;
-
+.card {
+margin: 15px 15px 15px 15px;
+padding: 0 0 0 0;
+border-color: white; /*#E8E8E8*/
+border-radius: 0;
 }
 
+
 .card-title {
-padding-left: 15px;
+margin-top: 15px;
+margin-bottom: 0;
+padding-left: 1px;
+font-family: Questrial, sans-serif;
+font-weight: bold;
+font-size: 0.9rem;
+color: black;
 }
 
 .card-text {
-padding-left: 15px;
+padding-left: 1px;
+margin-bottom: 5px;
+font-family: Questrial;
+font-size: 0.85rem;
 }
 
-.kupi {
-position: relative;
-left: 15px;
+.img-pic{
+  background-color: #F5F5F5;
 }
 
 .card-img-top{
+transform: translateY(+5%);
+  padding-top: 15%;
+  padding-bottom: 50px;
   width: 70%;
   height: 70%;
 }
 
+.kupi {
+  width: 100%;
+}
+
 .korpa{
 color: white;
+}
+
+.navbar-toggler:focus,.navbar-toggler:active,.navbar-toggler{
+   outline: none !important;
+   box-shadow: none !important
+   /*border-color: black*/
+}
+
+.kupi {
+left: 0;
+}
+
+.header {
+margin: auto;
+margin-top: 4px;
+width: 100%;
+height: 59px;
+padding-top: 20px;
+background-color: black;
+color: white;
+text-align: center;
+font-size: 1rem;
+font-family: Montserrat, sans-serif;
+}
+
+h4, .like{
+  display: inline;
+}
+
+.like{
+float: right;
+padding-top: 5px;
+}
+
+.juxtapose {
+    height: 100%;
+    width: 100%;
+}
+
+.modal-body {
+background-color: black;
+color: black;
+}
+
+.modal-footer {
+color: black;
+}
+
+ .pozadina{
+   background-color: white !important;
+ }
+
+.modal-dialog {
+	-webkit-transform: translate3d(125%, 0, 0);
+	transform: translate3d(125%, 0, 0);
+
+}
+.modal.right .modal-dialog {
+	position: fixed;
+	margin: auto;
+	width: 350px;
+	height: 100%;
+	-webkit-transform: translate3d(0%, 0, 0);
+	-ms-transform: translate3d(0%, 0, 0);
+	-o-transform: translate3d(0%, 0, 0);
+	transform: translate3d(0%, 0, 0);
+}
+
+.modal-body{
+  color: white;
+}
+
+tr{
+  border: 2px solid black;
+}
+
+.modal.right .modal-content {
+	height: 100%;
+	overflow-y: auto;
+
+}
+
+.modal.right .modal-body {
+	padding: 15px 15px 80px;
+
+}
+
+.modal.right.fade .modal-dialog {
+	right: -320px;
+	-webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+	-moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+	-o-transition: opacity 0.3s linear, right 0.3s ease-out;
+	transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal.right.fade.show .modal-dialog {
+	right: 0;
+}
+
+/* ----- MODAL STYLE ----- */
+.modal-content {
+	border-radius: 0;
+	border: none;
+  background-color: black;
+  color: white;
+}
+
+.modal-header {
+	border-bottom-color: white;
+	background-color: black;
+  color: white;
+}
+
+/* ----- v CAN BE DELETED v ----- */
+
+
+.demo {
+	padding-top: 60px;
+	padding-bottom: 110px;
+}
+
+.btn-demo {
+	margin: 15px;
+	padding: 10px 15px;
+	border-radius: 0;
+	font-size: 16px;
+	background-color: #ffffff;
+}
+
+.closer {
+	color: white;
+background-color: black;
+border-color: black;
+}
+
+.btn-demo:focus {
+	outline: 0;
+}
+
+.btn{
+  border-radius: 1px;
 }
