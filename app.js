@@ -233,21 +233,6 @@ function likedItemsIndexing (callback) {
 function likedItems() {
   userlikeditems = localStorage.getItem("user-liked".toString());
   numHearts = parseInt(localStorage.getItem("numHeartsSaved".toString()), 10);
-
-
-      $.ajax({
-          url: "save.php?action=save",
-          method: "POST",
-          data: { elem: {
-              poseta: userlikeditems
-          }},
-          success: function (data){
-            alert("Saved!");
-      }
-  });
-
-
-
   var all = document.querySelectorAll('.like_button');
   for (var i = 0; i <= all.length; i++) {
     var loadPage = localStorage.getItem(""+[i].toString());
@@ -256,13 +241,7 @@ function likedItems() {
     $("#srce--ikonica").css("color", "white");
     }
 
-    // $.getJSON("poseta.json", function(data) {
-    //     alert(data);// Now use this data to update your view models,
-    //     // and Knockout will update your UI automatically
-    // });
-
-
-    if (loadPage == null) {
+  if (loadPage == null) {
     $("#id-"+[i].toString()+"").html('<i class="far fa-heart like"></i>');
     } else {
     $("#id-"+[i].toString()+"").html(loadPage);
@@ -294,9 +273,9 @@ function likedItems() {
   if(numHearts !== 0){
   $("#srce--ikonica").css("color", "white");
   }
+  
   userlikeditems = ""+userlikeditems+" "+$(this).siblings('.card-title').html()+", ";
   localStorage.setItem("user-liked", userlikeditems);
-
   localStorage.setItem("statistika", userlikeditems);
 
   var copy =  $(this).html();
@@ -306,7 +285,6 @@ function likedItems() {
   localStorage.setItem("numHeartsSaved", numHearts.toString());
 }
 });
-
 
 //Find Hearts
 var numHearts = 0;
@@ -335,3 +313,23 @@ $("#srce--ikonica").css("color", "black");
 // };
 //
 // emailjs.send(service_id,template_id,template_params);
+
+  //
+  //     $.ajax({
+  //         url: "save.php?action=save",
+  //         method: "POST",
+  //         data: { elem: {
+  //             poseta: userlikeditems
+  //         }},
+  //         success: function (data){
+  //           alert("Saved!");
+  //     }
+  // });
+  //
+  //
+
+
+      // $.getJSON("poseta.json", function(data) {
+      //     alert(data);// Now use this data to update your view models,
+      //     // and Knockout will update your UI automatically
+      // });
