@@ -232,8 +232,7 @@ function likedItemsIndexing (callback) {
 
 function likedItems() {
   userlikeditems = localStorage.getItem("user-liked".toString());
-  //var numParse = parseInt(localStorage.getItem("numHeartsSaved".toString()), 10);
-  //numHearts = numParse;
+  numHearts = parseInt(localStorage.getItem("numHeartsSaved".toString()), 10);
   console.log("TEST"+numHearts); // PROBA //////////////////////////////////////////////////////////////////
 
     var all = document.querySelectorAll('.like_button');
