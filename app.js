@@ -231,13 +231,13 @@ function likedItemsIndexing (callback) {
 }
 
 function likedItems() {
-  console.log("update v2.st");
-  userlikeditems = localStorage.getItem("user-liked".toString());
+  console.log("update v2.stb");
+  userlikeditems = localStorage.getItem("user-liked".toString()); console.log("loading userlikeditems");
   numHearts = 0;
   var parseNumHearts = parseInt(localStorage.getItem("numHeartsSaved".toString()), 10);
   parseNumHearts = parseNumHearts || 0;
   numHearts = parseNumHearts;
-console.log("TEST|numHearts:"+numHearts+" parse:"+parseNumHearts); //////////////////////////
+console.log("TEST LOAD | numHearts:"+numHearts+" parse:"+parseNumHearts+" LOAD userlikeditems:"+userlikeditems); //////////////////////////
 
   var all = document.querySelectorAll('.like_button');
   for (var i = 0; i <= all.length; i++) {
@@ -261,7 +261,7 @@ console.log("TEST|numHearts:"+numHearts+" parse:"+parseNumHearts); /////////////
 
     numHearts--;
     $("#srce--ikonica").text(numHearts);
-    if(numHearts == 0){
+    if(numHearts <= 0){
     $("#srce--ikonica").css("color", "black");
     }
 
@@ -269,7 +269,7 @@ console.log("TEST|numHearts:"+numHearts+" parse:"+parseNumHearts); /////////////
     var replacer2 = $(this).attr("id");
     replacer2 = replacer2.replace('id-','');
     localStorage.setItem(replacer2, copy2);
-console.log("+TEST PRE MEMORISANJA|numHearts:"+numHearts); ///////////////////////////
+console.log("-TEST PRE MEMORISANJA | numHearts:"+numHearts); ///////////////////////////
     localStorage.setItem("numHeartsSaved", numHearts.toString());
 
   }else if($(this).html() == '<i class="far fa-heart like"></i>'){
@@ -277,19 +277,21 @@ console.log("+TEST PRE MEMORISANJA|numHearts:"+numHearts); /////////////////////
   $(this).html($likes);
   numHearts++;
   $("#srce--ikonica").text(numHearts);
-  if(numHearts !== 0){
+  if(numHearts > 0){
   $("#srce--ikonica").css("color", "white");
   }
 
   userlikeditems = ""+userlikeditems+" "+$(this).siblings('.card-title').html()+", ";
+  console.log("SAVE userlikeditems:"+userlikeditems); //////////////////////////
   localStorage.setItem("user-liked", userlikeditems);
+
   //localStorage.setItem("statistika", userlikeditems);
 
   var copy =  $(this).html();
   var replacer = $(this).attr("id");
   replacer = replacer.replace('id-','');
   localStorage.setItem(replacer, copy);
-console.log("-TEST PRE MEMORISANJA|numHearts:"+numHearts); ///////////////////////////
+console.log("+TEST PRE MEMORISANJA | numHearts:"+numHearts); ///////////////////////////
   localStorage.setItem("numHeartsSaved", numHearts.toString());
 }
 });
@@ -297,7 +299,7 @@ console.log("-TEST PRE MEMORISANJA|numHearts:"+numHearts); /////////////////////
 //Find Hearts
 var numHearts = 0;
 console.log("TEST PRVI |numHearts:"+numHearts); ////////////////////////////////////
-var userlikeditems;
+var userlikeditems; console.log("TEST PRVI | userlikeditems:"+userlikeditems); //////////////////////////
 var n = -1;
 function findHearts(e) {
     if (numHearts==0){alert("Još nemate favorita? | Dodajte (kliknite) srca kod artikala koji vam se svidjaju, pa kliknite ovde za pregled favorita, oni će vas čekati sledeći put kad posetite stranicu, označeni i spremni za kupovinu!");}
