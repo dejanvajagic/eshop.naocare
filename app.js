@@ -231,8 +231,14 @@ function likedItemsIndexing (callback) {
 }
 
 function likedItems() {
+  console.log("update v2.st");
   userlikeditems = localStorage.getItem("user-liked".toString());
-  numHearts = parseInt(localStorage.getItem("numHeartsSaved".toString()), 10);
+  numHearts = 0;
+  var parseNumHearts = parseInt(localStorage.getItem("numHeartsSaved".toString()), 10);
+  parseNumHearts = parseNumHearts || 0;
+  numHearts = parseNumHearts;
+console.log("TEST|numHearts:"+numHearts+" parse:"+parseNumHearts); //////////////////////////
+
   var all = document.querySelectorAll('.like_button');
   for (var i = 0; i <= all.length; i++) {
     var loadPage = localStorage.getItem(""+[i].toString());
@@ -263,6 +269,7 @@ function likedItems() {
     var replacer2 = $(this).attr("id");
     replacer2 = replacer2.replace('id-','');
     localStorage.setItem(replacer2, copy2);
+console.log("+TEST PRE MEMORISANJA|numHearts:"+numHearts); ///////////////////////////
     localStorage.setItem("numHeartsSaved", numHearts.toString());
 
   }else if($(this).html() == '<i class="far fa-heart like"></i>'){
@@ -282,12 +289,14 @@ function likedItems() {
   var replacer = $(this).attr("id");
   replacer = replacer.replace('id-','');
   localStorage.setItem(replacer, copy);
+console.log("-TEST PRE MEMORISANJA|numHearts:"+numHearts); ///////////////////////////
   localStorage.setItem("numHeartsSaved", numHearts.toString());
 }
 });
 
 //Find Hearts
 var numHearts = 0;
+console.log("TEST PRVI |numHearts:"+numHearts); ////////////////////////////////////
 var userlikeditems;
 var n = -1;
 function findHearts(e) {
