@@ -232,7 +232,8 @@ function likedItemsIndexing (callback) {
 
 function likedItems() {
   userlikeditems = localStorage.getItem("user-liked".toString());
-  numHearts = parseInt(localStorage.getItem("numHeartsSaved".toString()), 10);
+  var numParse = parseInt(localStorage.getItem("numHeartsSaved".toString()), 10);
+  numHearts = numParse;
   console.log("TEST"+numHearts); // PROBA //////////////////////////////////////////////////////////////////
 
     var all = document.querySelectorAll('.like_button');
@@ -279,7 +280,6 @@ function likedItems() {
 
   userlikeditems = ""+userlikeditems+" "+$(this).siblings('.card-title').html()+", ";
   localStorage.setItem("user-liked", userlikeditems);
-  localStorage.setItem("statistika", userlikeditems);
 
   var copy =  $(this).html();
   var replacer = $(this).attr("id");
