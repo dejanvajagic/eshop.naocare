@@ -234,7 +234,7 @@ function likedItems() {
   console.log("update v2.stb");
   userlikeditems = localStorage.getItem("user-liked".toString()); console.log("loading userlikeditems");
   numHearts = 0;
-  var parseNumHearts = parseInt(localStorage.getItem("numHeartsSaved".toString()), 10);
+  var parseNumHearts = parseInt(localStorage.getItem("numHeartsSaved".toString()), 10); console.log("parsing userlikeditems");
   parseNumHearts = parseNumHearts || 0;
   numHearts = parseNumHearts;
 console.log("TEST LOAD | numHearts:"+numHearts+" parse:"+parseNumHearts+" LOAD userlikeditems:"+userlikeditems); //////////////////////////
