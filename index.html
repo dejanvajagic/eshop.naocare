@@ -32,9 +32,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link href="styles.css" rel="stylesheet" type="text/css"/>
-
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script type="text/javascript">
+   (function(){
+      emailjs.init("user_s2q040piStH7WitxNBHgN");
+   })();
+</script>
 </head>
 <body onload="likedItemsIndexing(likedItems);">
 
@@ -69,7 +75,8 @@
     </ul>
     </div>
     <div class="ikonice">
-    <img src="images/logo/like-icon.png" class="srce-ikonica">&nbsp;&nbsp;&nbsp;
+    <img src="images/logo/like-icon.png"class="srce-ikonica" type="button" onclick="findHearts(event)">
+    <sup id="srce--ikonica">0</sup>&nbsp;
     <img src="images/logo/cart-icon.png" type="button" data-toggle="modal" data-target="#cart-eshop" class="cart-ikonica" onclick="#cart-eshop" aria-hidden="true"> [<span class="total-count"></span>]&nbsp;&nbsp;
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555">
     <span class="navbar-toggler-icon"></span>
@@ -83,7 +90,7 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <video class="juxtapose video-fluid" autoplay loop muted>
-        <source src="images/ultra-polaroid3.mp4" type="video/mp4" />
+        <source src="images/ultra-polaroids.mp4" type="video/mp4" />
       </video>
       <!-- <img class="d-block w-100" src="images/mainBlue.png" alt="First slide"> -->
     </div>
@@ -160,7 +167,7 @@
       <h4 class="card-title">Naočare3</h4><span class="like_button"><i class="far fa-heart like"></span></i><p class="card-text">Cena: 7500 din</p>
       <a href="#" data-name="Naočare3" data-price="7500" class="add-to-cart btn btn-block btn-dark kupi " data-toggle="modal" data-target="#cart-eshop">Kupi</a></div>
      </div>
-    </div>
+   </div>
 
     <!-- Artikl 04 -->
     <div class="col-6 col-sm-6 col-md-3 col-lg-3 box">
@@ -270,11 +277,136 @@
      </div>
     </div>
 
-
-
   </div> <!-- /row -->
 </div> <!-- /eshop -->
 
+              <!--Promo Slider MINI-->
+              <div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+                <!-- Bottom Carousel Indicators -->
+
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+
+                  <!--First slide-->
+                  <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-6 col-md-6 mb-3">
+                      <div class="w-100 card slide2">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(38).jpg"
+                          alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-6 mb-3">
+                      <div class="w-100 card slide2">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(19).jpg"
+                          alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <!--Second slide-->
+                  <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-6 col-md-6 mb-3">
+                      <div class="w-100 card slide2">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg"
+                          alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-6 mb-3">
+                      <div class="w-100 card slide2">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(25).jpg"
+                          alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                  <!--Third slide-->
+                  <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-6 col-md-6 mb-3">
+                      <div class="w-100  card slide2">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(64).jpg"
+                          alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-6 mb-3">
+                      <div class="w-100  card slide2">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(51).jpg"
+                          alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                      </div>
+                    </div>
+                    </div>
+                  </div><!--/.Third slide-->
+                </div>
+                </div>
+              <!--/.Carousel Wrapper-->
+
+            <!--Promo Slider BIG-->
+            <div id="multi-item-example-big" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+              <!--Slides-->
+              <div class="carousel-inner" role="listbox">
+
+                <!--First slide-->
+                <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-6 col-md-3 mb-3">
+                    <div class="w-100 card slide2">
+                      <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(38).jpg"
+                        alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 mb-3">
+                    <div class="w-100 card slide2">
+                      <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(19).jpg"
+                        alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 mb-3">
+                    <div class="w-100 card slide2">
+                      <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg"
+                        alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 mb-3">
+                    <div class="w-100 card slide2">
+                      <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(25).jpg"
+                        alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <!--Second slide-->
+                <div class="carousel-item">
+                <div class="row">
+                  <div class="col-6 col-md-3 mb-3">
+                    <div class="w-100 card slide2">
+                      <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg"
+                        alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 mb-3">
+                    <div class="w-100 card slide2">
+                      <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(25).jpg"
+                        alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 mb-3">
+                    <div class="w-100  card slide2">
+                      <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(64).jpg"
+                        alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 mb-3">
+                    <div class="w-100 card slide2">
+                      <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(51).jpg"
+                        alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <!--/.Promo slides-->
 
   <!-- Moja Korpa Lista Porudžbina -->
       <div class="container demo">
@@ -290,17 +422,19 @@
             <div class="modal-body">
               <table class="show-cart table">
               </table>
-              <div>Ukupno: <span class="total-cart"></span> din.</div>
+              <div class="total">Ukupno: &nbsp;&nbsp;<span class="total-cart"></span> din. &nbsp;&nbsp;&nbsp;</div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="clear-cart btn btn-dark">Izbriši poružbine</button>
+              <button type="button" class="clear-cart btn btn-outline-li">Izbriši</button>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Dodaj još proizvoda</button>
-              <button type="button" class="btn btn-primary">Poruči sada</button>
+              <button type="button" class="btn btn-dark">Poruči</button>
             </div>
           </div>
         </div>
+
       </div>
     </div><!-- container -->
+
 
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>

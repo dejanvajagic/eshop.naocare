@@ -104,6 +104,10 @@ border-color: white; /*#E8E8E8*/
 border-radius: 0;
 }
 
+.total{
+float: right;
+
+}
 
 .card-title {
 margin-top: 15px;
@@ -186,6 +190,8 @@ color: black;
 
 .modal-footer {
 color: black;
+/*position: relative;
+bottom: 50px;*/
 }
 
  .pozadina{
@@ -272,7 +278,7 @@ tr{
 .closer {
 	color: white;
 background-color: black;
-border-color: black;
+border-color: gray;
 }
 
 .btn-demo:focus {
@@ -282,3 +288,29 @@ border-color: black;
 .btn{
   border-radius: 1px;
 }
+
+.slide2 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#srce--ikonica {
+  right:8px;
+
+}
+
+  @media screen (max-width: 1000px) {
+    #multi-item-example {  }  /* show it on small screens */
+  }
+
+  @media screen and (min-width: 1000px) {
+    #multi-item-example { display: none; }   /* hide it elsewhere */
+  }
+
+  @media screen (min-width: 1000px) {
+    #multi-item-example-big {  }  /* show it on small screens */
+  }
+
+  @media screen and (max-width: 1000px) {
+    #multi-item-example-big { display: none; }   /* hide it elsewhere */
+  }
