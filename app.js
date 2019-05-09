@@ -285,6 +285,7 @@ function likedItems() {
   var replacer = $(this).attr("id");
   replacer = replacer.replace('id-','');
   localStorage.setItem(replacer, copy);
+  console.log("pred memorisanje"+numHearts);
   localStorage.setItem("numHeartsSaved", numHearts.toString());
 }
 });
