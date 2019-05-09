@@ -265,6 +265,7 @@ function likedItems() {
     var replacer2 = $(this).attr("id");
     replacer2 = replacer2.replace('id-','');
     localStorage.setItem(replacer2, copy2);
+    console.log("pred memorisanje"+numHearts);
     localStorage.setItem("numHeartsSaved", numHearts.toString());
 
   }else if($(this).html() == '<i class="far fa-heart like"></i>'){
