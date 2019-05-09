@@ -303,33 +303,3 @@ if($("#srce--ikonica").html() == "0"){
 $("#srce--ikonica").css("color", "black");
 }
 
-// mailer code
-// var service_id = 'gmail';
-// var template_id = 'template_eXYdWW2P';
-// var template_params = {
-// 	name: 'John',
-// 	reply_email: 'dejanmail@yahoo.com',
-// 	message: 'This is awesome!'+userlikeditems+""
-// };
-//
-// emailjs.send(service_id,template_id,template_params);
-
-  //
-  //     $.ajax({
-  //         url: "save.php?action=save",
-  //         method: "POST",
-  //         data: { elem: {
-  //             poseta: userlikeditems
-  //         }},
-  //         success: function (data){
-  //           alert("Saved!");
-  //     }
-  // });
-  //
-  //
-
-
-      // $.getJSON("poseta.json", function(data) {
-      //     alert(data);// Now use this data to update your view models,
-      //     // and Knockout will update your UI automatically
-      // });
