@@ -232,7 +232,7 @@ function likedItemsIndexing (callback) {
 
 function likedItems() {
   userlikeditems = localStorage.getItem("user-liked".toString());
-  
+  alert(userlikedItems); // PROBA //////////////////////////////////////////////////////////////////
   var all = document.querySelectorAll('.like_button');
   for (var i = 0; i <= all.length; i++) {
     var loadPage = localStorage.getItem(""+[i].toString());
