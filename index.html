@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- GoogleFonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700|Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <title>Sun OnLine | naočare, ultrapolaroid, ultra polaroid, naočare za sunce</title>
+
+    <meta name="description" content="So Shady is more than trend-setting eyewear, it’s an attitude. From the plane, to the show, to the party, So Shady maintains your sass whilst hiding your bags, and most importantly always keeps it fashion. Designed with luxury fashion and lifestyle influencer Tamara Kalinic, Season 1 was inspired by sharp architectural">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!-- Facebook -->
+    <!-- <meta property="og:type" content="website">
+    <meta property="og:title" content="So Shady">
+    <meta property="og:image" content="http://cdn.shopify.com/s/files/1/1890/8537/t/11/assets/logo.png?2829">
+    <meta property="og:image:secure_url" content="https://cdn.shopify.com/s/files/1/1890/8537/t/11/assets/logo.png?2829">
+    <meta property="og:url" content="https://oursocialcollective.com/collections/so-shady">
+    <meta property="og:site_name" content="Our Social Collective"> -->
+    <!-- <meta property="og:image" content="http://cdn.shopify.com/s/files/1/1890/8537/t/11/assets/logo.png?2829" />
+    <meta property="og:image:secure_url" content="https://cdn.shopify.com/s/files/1/1890/8537/t/11/assets/logo.png?2829" /> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script type="text/javascript">
+   (function(){
+      emailjs.init("user_s2q040piStH7WitxNBHgN");
+   })();
+</script>
+</head>
+<body onload="likedItemsIndexing(likedItems);">
+
+<!-- Main -->
+
+  <!-- Meni -->
+  <div class="labela">SOL 10% Off First Order with Code
+    <nav class="navbar-fixed-top meni navbar navbar-expand-lg navbar-dark">
+    <img src="images/logo/SOL-icon.png" class="nav-item avatar dropdown d-inline-block align-top" alt="">&nbsp;&nbsp;&nbsp;
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">NAOČARE: &nbsp;&nbsp;&nbsp;
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">MUŠKE &nbsp;&nbsp;&nbsp;</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ŽENSKE &nbsp;&nbsp;&nbsp;</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">SPRINGFLY &nbsp;&nbsp;&nbsp;</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">SEXY &nbsp;&nbsp;&nbsp;</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">TRENDY &nbsp;&nbsp;&nbsp;</a>
+      </li>
+    </ul>
+    </div>
+    <div class="ikonice">
+    <img src="images/logo/like-icon.png"class="srce-ikonica" type="button" onclick="findHearts(event)">
+    <sup id="srce--ikonica">0</sup>&nbsp;
+    <img src="images/logo/cart-icon.png" type="button" data-toggle="modal" data-target="#cart-eshop" class="cart-ikonica" onclick="#cart-eshop" aria-hidden="true"> [<span class="total-count"></span>]&nbsp;&nbsp;
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    </div>
+    </nav>
+  </div> <!-- /labela, navbar meni -->
+
+  <!-- Slider -->
+  <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <video class="juxtapose video-fluid" autoplay loop muted>
+        <source src="images/ultra-polaroids.mp4" type="video/mp4" />
+      </video>
+      <!-- <img class="d-block w-100" src="images/mainBlue.png" alt="First slide"> -->
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/frontheaderbw.png" alt="Fourth slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/frontheaderbw2.png" alt="Fourth slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/frontheaderbw3.png" alt="Fourth slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/frontheaderbw4.png" alt="Fourth slide">
+    </div>
+    <!-- <div class="carousel-item">
+      <img class="d-block w-100" src="images/frontheader.png" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/frontheader2.jpg" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/frontheader3.jpg" alt="Fourth slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/frontheader4.jpg" alt="Fourth slide">
+    </div> -->
+  </div>
+  </div>
+  <!-- /slider -->
+
+
+  <section class="artikli">
+    <!-- Artiklli -->
+    <!-- Proizvodi -->
+    <div class="eshop">
+    <div class="row">
+
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="header">MUŠKE INVU NAOČARE</div>
+  </div>
+    <!-- Artikl 01 -->
+    <div class="col-6 col-sm-6 col-md-3 col-lg-3 box">
+     <div class="card">
+      <a data-target="#modalIMG" data-toggle="modal" href="#" class="img-pic color-gray-darker td-hover-none"><img class="card-img-top" alt="Card image cap"
+      src="https://www.montblanc.com/content/dam/mtb/products/eyewear/123/998/123998/255147-ecom-retina-01.png.adapt.306.306.png" style="display: block; margin-left: auto; margin-right: auto;"></a><div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade"
+      id="modalIMG" role="dialog" tabindex="-1"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="pozadina modal-body mb-0 p-0">
+      <img src="https://www.montblanc.com/content/dam/mtb/products/eyewear/123/998/123998/255147-ecom-retina-01.png.adapt.306.306.png" alt="" style="width:70%; height:70%; display: block; margin-left: auto; margin-right: auto;"><div class="modal-footer"><div>Pregled slike modela</div><button class="btn btn-dark btn-md ml-4 text-center" data-dismiss="modal" type="button">Zatvori pregled</button></div></div></div></div></div><div class="card-block">
+      <h4 class="card-title">SO EXTRA | STARDUST</h4>
+      <span class="like_button"><i class="far fa-heart like"></span></i><p class="card-text">Cena: 6500 din</p>
+      <a href="#" data-name="EXTRA|STARDUST" data-price="6500" class="add-to-cart btn btn-block btn-dark kupi" data-toggle="modal" data-target="#cart-eshop">Kupi</a></div>
+     </div>
+    </div>
+
+    <!-- Artikl 02 -->
+    <div class="col-6 col-sm-6 col-md-3 col-lg-3 box">
+     <div class="card">
+      <a data-target="#modalIMG2" data-toggle="modal" href="#" class="img-pic color-gray-darker td-hover-none"><img class="card-img-top" alt="Card image cap"
+      src="https://carwad.net/sites/default/files/sun-glasses-images-140642-361775.jpg" style="display: block; margin-left: auto; margin-right: auto;"></a><div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade"
+      id="modalIMG2" role="dialog" tabindex="-1"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="pozadina modal-body mb-0 p-0">
+      <img src="https://carwad.net/sites/default/files/sun-glasses-images-140642-361775.jpg" alt="" style="width:70%; height:70%; display: block; margin-left: auto; margin-right: auto;"><div class="modal-footer"><div>Pregled slike modela</div><button class="btn btn-dark btn-md ml-4 text-center" data-dismiss="modal" type="button">Zatvori pregled</button></div></div></div></div></div><div class="card-block">
+      <h4 class="card-title">Naočare2</h4><span class="like_button"><i class="far fa-heart like"></span></i><p class="card-text">Cena: 8500 din</p>
+      <a href="#" data-name="Naočare2" data-price="8500" class="add-to-cart btn btn-block btn-dark kupi " data-toggle="modal" data-target="#cart-eshop">Kupi</a></div>
+     </div>
+    </div>
+
+    <!-- Artikl 03 -->
+    <div class="col-6 col-sm-6 col-md-3 col-lg-3 box">
+     <div class="card">
+      <a data-target="#modalIMG3" data-toggle="modal" href="#" class="img-pic color-gray-darker td-hover-none"><img class="card-img-top" alt="Card image cap"
+      src="https://static.weezbe.com/laboutiqueatr/Images/products/p_104G_150819223312.png" style="display: block; margin-left: auto; margin-right: auto;"></a><div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade"
+      id="modalIMG3" role="dialog" tabindex="-1"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="pozadina modal-body mb-0 p-0">
+      <img src="https://static.weezbe.com/laboutiqueatr/Images/products/p_104G_150819223312.png" alt="" style="width:70%; height:70%; display: block; margin-left: auto; margin-right: auto;"><div class="modal-footer"><div>Pregled slike modela</div><button class="btn btn-dark btn-md ml-4 text-center" data-dismiss="modal" type="button">Zatvori pregled</button></div></div></div></div></div><div class="card-block">
+      <h4 class="card-title">Naočare3</h4><span class="like_button"><i class="far fa-heart like"></span></i><p class="card-text">Cena: 7500 din</p>
+      <a href="#" data-name="Naočare3" data-price="7500" class="add-to-cart btn btn-block btn-dark kupi " data-toggle="modal" data-target="#cart-eshop">Kupi</a></div>
+     </div>
+   </div>
+
+    <!-- Artikl 04 -->
+    <div class="col-6 col-sm-6 col-md-3 col-lg-3 box">
+     <div class="card">
+      <a data-target="#modalIMG3" data-toggle="modal" href="#" class="img-pic color-gray-darker td-hover-none"><img class="card-img-top" alt="Card image cap"
+      src="https://static.weezbe.com/laboutiqueatr/Images/products/p_104G_150819223312.png" style="display: block; margin-left: auto; margin-right: auto;"></a><div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade"
+      id="modalIMG3" role="dialog" tabindex="-1"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="pozadina modal-body mb-0 p-0">
+      <img src="https://static.weezbe.com/laboutiqueatr/Images/products/p_104G_150819223312.png" alt="" style="width:70%; height:70%; display: block; margin-left: auto; margin-right: auto;"><div class="modal-footer"><div>Pregled slike modela</div><button class="btn btn-dark btn-md ml-4 text-center" data-dismiss="modal" type="button">Zatvori pregled</button></div></div></div></div></div><div class="card-block">
+      <h4 class="card-title">Naočare3</h4><span class="like_button"><i class="far fa-heart like"></span></i><p class="card-text">Cena: 7500 din</p>
+      <a href="#" data-name="Naočare3" data-price="7500" class="add-to-cart btn btn-block btn-dark kupi " data-toggle="modal" data-target="#cart-eshop">Kupi</a></div>
+     </div>
+    </div>
+
+    <!-- Artikl 05 -->
+    <div class="col-6 col-sm-6 col-md-3 col-lg-3 box">
+     <div class="card">
+      <a data-target="#modalIMG" data-toggle="modal" href="#" class="img-pic color-gray-darker td-hover-none"><img class="card-img-top" alt="Card image cap"
+      src="https://www.montblanc.com/content/dam/mtb/products/eyewear/123/998/123998/255147-ecom-retina-01.png.adapt.306.306.png" style="display: block; margin-left: auto; margin-right: auto;"></a><div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade"
+      id="modalIMG" role="dialog" tabindex="-1"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="pozadina modal-body mb-0 p-0">
+      <img src="https://www.montblanc.com/content/dam/mtb/products/eyewear/123/998/123998/255147-ecom-retina-01.png.adapt.306.306.png" alt="" style="width:70%; height:70%; display: block; margin-left: auto; margin-right: auto;"><div class="modal-footer"><div>Pregled slike modela</div><button class="btn btn-dark btn-md ml-4 text-center" data-dismiss="modal" type="button">Zatvori pregled</button></div></div></div></div></div><div class="card-block">
+      <h4 class="card-title">Naočare1</h4><span class="like_button"><i class="far fa-heart like"></span></i><p class="card-text">Cena: 6500 din</p>
+      <a href="#" data-name="Naočare1" data-price="6500" class="add-to-cart btn btn-block btn-dark kupi " data-toggle="modal" data-target="#cart-eshop">Kupi</a></div>
+     </div>
+    </div>
+
+    <!-- Artikl 06 -->
+    <div class="col-6 col-sm-6 col-md-3 col-lg-3 box">
+     <div class="card">
+      <a data-target="#modalIMG2" data-toggle="modal" href="#" class="img-pic color-gray-darker td-hover-none"><img class="card-img-top" alt="Card image cap"
+      src="https://carwad.net/sites/default/files/sun-glasses-images-140642-361775.jpg" style="display: block; margin-left: auto; margin-right: auto;"></a><div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade"
+      id="modalIMG2" role="dialog" tabindex="-1"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="pozadina modal-body mb-0 p-0">
+      <img src="https://carwad.net/sites/default/files/sun-glasses-images-140642-361775.jpg" alt="" style="width:70%; height:70%; display: block; margin-left: auto; margin-right: auto;"><div class="modal-footer"><div>Pregled slike modela</div><button class="btn btn-dark btn-md ml-4 text-center" data-dismiss="modal" type="button">Zatvori pregled</button></div></div></div></div></div><div class="card-block">
+      <h4 class="card-title">Naočare2</h4><span class="like_button"><i class="far fa-heart like"></span></i><p class="card-text">Cena: 8500 din</p>
+      <a href="#" data-name="Naočare2" data-price="8500" class="add-to-cart btn btn-block btn-dark kupi " data-toggle="modal" data-target="#cart-eshop">Kupi</a></div>
+     </div>
+    </div>
+
+    <!-- Artikl 07 -->
+    <div class="col-6 col-sm-6 col-md-3 col-lg-3 box">
+     <div class="card">
+      <a data-target="#modalIMG3" data-toggle="modal" href="#" class="img-pic color-gray-darker td-hover-none"><img class="card-img-top" alt="Card image cap"
+      src="https://static.weezbe.com/laboutiqueatr/Images/products/p_104G_150819223312.png" style="display: block; margin-left: auto; margin-right: auto;"></a><div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade"
+      id="modalIMG3" role="dialog" tabindex="-1"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="pozadina modal-body mb-0 p-0">
+      <img src="https://static.weezbe.com/laboutiqueatr/Images/products/p_104G_150819223312.png" alt="" style="width:70%; height:70%; display: block; margin-left: auto; margin-right: auto;"><div class="modal-footer"><div>Pregled slike modela</div><button class="btn btn-dark btn-md ml-4 text-center" data-dismiss="modal" type="button">Zatvori pregled</button></div></div></div></div></div><div class="card-block">
+      <h4 class="card-title">Naočare3</h4><span class="like_button"><i class="far fa-heart like"></span></i><p class="card-text">Cena: 7500 din</p>
+      <a href="#" data-name="Naočare3" data-price="7500" class="add-to-cart btn btn-block btn-dark kupi " data-toggle="modal" data-target="#cart-eshop">Kupi</a></div>
+     </div>
+    </div>
+
+    <!-- Artikl 08 -->
+    <div class="col-6 col-sm-6 col-md-3 col-lg-3 box">
+     <div class="card">
+      <a data-target="#modalIMG" data-toggle="modal" href="#" class="img-pic color-gray-darker td-hover-none"><img class="card-img-top" alt="Card image cap"
+      src="https://www.montblanc.com/content/dam/mtb/products/eyewear/123/998/123998/255147-ecom-retina-01.png.adapt.306.306.png" style="display: block; margin-left: auto; margin-right: auto;"></a><div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade"
+      id="modalIMG" role="dialog" tabindex="-1"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="pozadina modal-body mb-0 p-0">
+      <img src="https://www.montblanc.com/content/dam/mtb/products/eyewear/123/998/123998/255147-ecom-retina-01.png.adapt.306.306.png" alt="" style="width:70%; height:70%; display: block; margin-left: auto; margin-right: auto;"><div class="modal-footer"><div>Pregled slike modela</div><button class="btn btn-dark btn-md ml-4 text-center" data-dismiss="modal" type="button">Zatvori pregled</button></div></div></div></div></div><div class="card-block">
+      <h4 class="card-title">Naočare1</h4><span class="like_button"><i class="far fa-heart like"></span></i><p class="card-text">Cena: 6500 din</p>
+      <a href="#" data-name="Naočare1" data-price="6500" class="add-to-cart btn btn-block btn-dark kupi " data-toggle="modal" data-target="#cart-eshop">Kupi</a></div>
+     </div>
+    </div>
+
+    <!-- Artikl 09 -->
+    <div class="col-6 col-sm-6 col-md-3 col-lg-3 box">
+     <div class="card">
+      <a data-target="#modalIMG2" data-toggle="modal" href="#" class="img-pic color-gray-darker td-hover-none"><img class="card-img-top" alt="Card image cap"
+      src="https://carwad.net/sites/default/files/sun-glasses-images-140642-361775.jpg" style="display: block; margin-left: auto; margin-right: auto;"></a><div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade"
+      id="modalIMG2" role="dialog" tabindex="-1"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="pozadina modal-body mb-0 p-0">
+      <img src="https://carwad.net/sites/default/files/sun-glasses-images-140642-361775.jpg" alt="" style="width:70%; height:70%; display: block; margin-left: auto; margin-right: auto;"><div class="modal-footer"><div>Pregled slike modela</div><button class="btn btn-dark btn-md ml-4 text-center" data-dismiss="modal" type="button">Zatvori pregled</button></div></div></div></div></div><div class="card-block">
+      <h4 class="card-title">Naočare2</h4><span class="like_button"><i class="far fa-heart like"></span></i><p class="card-text">Cena: 8500 din</p>
+      <a href="#" data-name="Naočare2" data-price="8500" class="add-to-cart btn btn-block btn-dark kupi " data-toggle="modal" data-target="#cart-eshop">Kupi</a></div>
+     </div>
+    </div>
+
+    <!-- Artikl 10 -->
+    <div class="col-6 col-sm-6 col-md-3 col-lg-3 box">
+     <div class="card">
+      <a data-target="#modalIMG3" data-toggle="modal" href="#" class="img-pic color-gray-darker td-hover-none"><img class="card-img-top" alt="Card image cap"
+      src="https://static.weezbe.com/laboutiqueatr/Images/products/p_104G_150819223312.png" style="display: block; margin-left: auto; margin-right: auto;"></a><div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade"
+      id="modalIMG3" role="dialog" tabindex="-1"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="pozadina modal-body mb-0 p-0">
+      <img src="https://static.weezbe.com/laboutiqueatr/Images/products/p_104G_150819223312.png" alt="" style="width:70%; height:70%; display: block; margin-left: auto; margin-right: auto;"><div class="modal-footer"><div>Pregled slike modela</div><button class="btn btn-dark btn-md ml-4 text-center" data-dismiss="modal" type="button">Zatvori pregled</button></div></div></div></div></div><div class="card-block">
+      <h4 class="card-title">Naočare3</h4><span class="like_button"><i class="far fa-heart like"></span></i><p class="card-text">Cena: 7500 din</p>
+      <a href="#" data-name="Naočare3" data-price="7500" class="add-to-cart btn btn-block btn-dark kupi " data-toggle="modal" data-target="#cart-eshop">Kupi</a></div>
+     </div>
+    </div>
+
+    <!-- Artikl 11 -->
+    <div class="col-6 col-sm-6 col-md-3 col-lg-3 box">
+     <div class="card">
+      <a data-target="#modalIMG3" data-toggle="modal" href="#" class="img-pic color-gray-darker td-hover-none"><img class="card-img-top" alt="Card image cap"
+      src="https://static.weezbe.com/laboutiqueatr/Images/products/p_104G_150819223312.png" style="display: block; margin-left: auto; margin-right: auto;"></a><div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade"
+      id="modalIMG3" role="dialog" tabindex="-1"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="pozadina modal-body mb-0 p-0">
+      <img src="https://static.weezbe.com/laboutiqueatr/Images/products/p_104G_150819223312.png" alt="" style="width:70%; height:70%; display: block; margin-left: auto; margin-right: auto;"><div class="modal-footer"><div>Pregled slike modela</div><button class="btn btn-dark btn-md ml-4 text-center" data-dismiss="modal" type="button">Zatvori pregled</button></div></div></div></div></div><div class="card-block">
+      <h4 class="card-title">Naočare3</h4><span class="like_button"><i class="far fa-heart like"></span></i><p class="card-text">Cena: 7500 din</p>
+      <a href="#" data-name="Naočare3" data-price="7500" class="add-to-cart btn btn-block btn-dark kupi " data-toggle="modal" data-target="#cart-eshop">Kupi</a></div>
+     </div>
+    </div>
+
+    <!-- Artikl 12 -->
+    <div class="col-6 col-sm-6 col-md-3 col-lg-3 box">
+     <div class="card">
+      <a data-target="#modalIMG3" data-toggle="modal" href="#" class="img-pic color-gray-darker td-hover-none"><img class="card-img-top" alt="Card image cap"
+      src="https://static.weezbe.com/laboutiqueatr/Images/products/p_104G_150819223312.png" style="display: block; margin-left: auto; margin-right: auto;"></a><div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade"
+      id="modalIMG3" role="dialog" tabindex="-1"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="pozadina modal-body mb-0 p-0">
+      <img src="https://static.weezbe.com/laboutiqueatr/Images/products/p_104G_150819223312.png" alt="" style="width:70%; height:70%; display: block; margin-left: auto; margin-right: auto;"><div class="modal-footer"><div>Pregled slike modela</div><button class="btn btn-dark btn-md ml-4 text-center" data-dismiss="modal" type="button">Zatvori pregled</button></div></div></div></div></div><div class="card-block">
+      <h4 class="card-title">Naočare3</h4><span class="like_button"><i class="far fa-heart like"></span></i><p class="card-text">Cena: 7500 din</p>
+      <a href="#" data-name="Naočare3" data-price="7500" class="add-to-cart btn btn-block btn-dark kupi " data-toggle="modal" data-target="#cart-eshop">Kupi</a></div>
+     </div>
+    </div>
+
+  </div> <!-- /row -->
+</div> <!-- /eshop -->
+
+              <!--Promo Slider MINI-->
+              <div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+                <!-- Bottom Carousel Indicators -->
+
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+
+                  <!--First slide-->
+                  <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-6 col-md-6 mb-3">
+                      <div class="w-100 card slide2">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(38).jpg"
+                          alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-6 mb-3">
+                      <div class="w-100 card slide2">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(19).jpg"
+                          alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <!--Second slide-->
+                  <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-6 col-md-6 mb-3">
+                      <div class="w-100 card slide2">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg"
+                          alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-6 mb-3">
+                      <div class="w-100 card slide2">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(25).jpg"
+                          alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                  <!--Third slide-->
+                  <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-6 col-md-6 mb-3">
+                      <div class="w-100  card slide2">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(64).jpg"
+                          alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-6 mb-3">
+                      <div class="w-100  card slide2">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(51).jpg"
+                          alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                      </div>
+                    </div>
+                    </div>
+                  </div><!--/.Third slide-->
+                </div>
+                </div>
+              <!--/.Carousel Wrapper-->
+
+            <!--Promo Slider BIG-->
+            <div id="multi-item-example-big" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+              <!--Slides-->
+              <div class="carousel-inner" role="listbox">
+
+                <!--First slide-->
+                <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-6 col-md-3 mb-3">
+                    <div class="w-100 card slide2">
+                      <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(38).jpg"
+                        alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 mb-3">
+                    <div class="w-100 card slide2">
+                      <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(19).jpg"
+                        alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 mb-3">
+                    <div class="w-100 card slide2">
+                      <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg"
+                        alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 mb-3">
+                    <div class="w-100 card slide2">
+                      <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(25).jpg"
+                        alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <!--Second slide-->
+                <div class="carousel-item">
+                <div class="row">
+                  <div class="col-6 col-md-3 mb-3">
+                    <div class="w-100 card slide2">
+                      <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg"
+                        alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 mb-3">
+                    <div class="w-100 card slide2">
+                      <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(25).jpg"
+                        alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 mb-3">
+                    <div class="w-100  card slide2">
+                      <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(64).jpg"
+                        alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 mb-3">
+                    <div class="w-100 card slide2">
+                      <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(51).jpg"
+                        alt="Card image cap"><div class="header">MUŠKE INVU NAOČARE</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <!--/.Promo slides-->
+
+  <!-- Moja Korpa Lista Porudžbina -->
+      <div class="container demo">
+       <div class="modal right fade" id="cart-eshop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Vaša korpa | Porudžbine </h5>
+              <button type="button" class="closer" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <table class="show-cart table">
+              </table>
+              <div class="total">Ukupno: &nbsp;&nbsp;<span class="total-cart"></span> din. &nbsp;&nbsp;&nbsp;</div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="clear-cart btn btn-outline-li">Izbriši</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Dodaj još proizvoda</button>
+              <button type="button" class="btn btn-dark">Poruči</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- container -->
+
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script  src="app.js"></script>
+
+  </section> <!-- /artikli -->
+
+</body>
+</html>
