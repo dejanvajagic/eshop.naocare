@@ -258,7 +258,7 @@ function likedItems() {
 
     numHearts--;
     $("#srce--ikonica").text(numHearts);
-    if(numHearts == 0 | numHearts == NaN | numHearts == Null ){
+    if(numHearts == 0 | numHearts == NaN | numHearts == null ){
     $("#srce--ikonica").css("color", "black");
     }
 
