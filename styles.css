@@ -131,11 +131,11 @@ font-size: 0.85rem;
 }
 
 .card-img-top{
-transform: translateY(+5%);
-  padding-top: 15%;
-  padding-bottom: 50px;
-  width: 70%;
-  height: 70%;
+padding-top: 84px;
+padding-bottom: 84px;
+padding-right: 10px;
+width: 110%;
+height:110%;
 }
 
 .kupi {
