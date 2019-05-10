@@ -1,4 +1,4 @@
- 
+
 // localStorage Cache Code
 function likedItemsIndexing (callback) {
   setTimeout(function() {
@@ -92,6 +92,23 @@ function findHearts(e) {
 if($("#srce--ikonica").html() == "0"){
 $("#srce--ikonica").css("color", "black");
 }
+
+$('#button-arrow-up').hide();
+// $('#buy-button').hide();
+$(window).scroll(function(){
+
+       if ($(this).scrollTop() > 100 ) {
+           $('#button-arrow-up').fadeIn();
+       } else {
+           $('#button-arrow-up').fadeOut();
+       }
+       //
+       // if ($(this).scrollTop() > 200 ) {
+       //     $('#buy-button').fadeIn();
+       // } else {
+       //     $('#buy-button').fadeOut();
+       // }
+   });
 
 // mailer code
 // var service_id = 'gmail';
