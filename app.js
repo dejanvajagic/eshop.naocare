@@ -94,7 +94,7 @@ $("#srce--ikonica").css("color", "black");
 }
 
 $('#button-arrow-up').hide();
-// $('#buy-button').hide();
+$('#buy-button').hide();
 $(window).scroll(function(){
 
        if ($(this).scrollTop() > 100 ) {
@@ -102,12 +102,12 @@ $(window).scroll(function(){
        } else {
            $('#button-arrow-up').fadeOut();
        }
-       //
-       // if ($(this).scrollTop() > 200 ) {
-       //     $('#buy-button').fadeIn();
-       // } else {
-       //     $('#buy-button').fadeOut();
-       // }
+
+       if ($(this).scrollTop() > 200 ) {
+           $('#buy-button').fadeIn();
+       } else {
+           $('#buy-button').fadeOut();
+       }
    });
 
 // mailer code
