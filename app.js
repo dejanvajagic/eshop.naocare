@@ -103,7 +103,7 @@ $(window).scroll(function(){
            $('#button-arrow-up').fadeOut();
        }
 
-       if ($(this).scrollTop() > 200 ) {
+       if ($(this).scrollTop() > 150 ) {
            $('#buy-button').fadeIn();
        } else {
            $('#buy-button').fadeOut();
