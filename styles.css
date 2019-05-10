@@ -306,7 +306,7 @@ border-color: gray;
 
   @media screen and (min-width: 1000px) {
     #multi-item-example { display: none; }   /* hide it elsewhere */
-    #buy-button{left: 95% !important; bottom: 10px !important; }
+    #buy-button{left: 93vW !important; bottom: 10px !important; }
     #button-arrow-up{left: 38.5% !important; top: -3px !important; }
   }
 
@@ -317,6 +317,7 @@ border-color: gray;
   @media screen and (max-width: 1000px) {
     #multi-item-example-big { display: none; }   /* hide it elsewhere */
   }
+
 
   #button-arrow-up{
     width: 100%;
@@ -330,6 +331,6 @@ border-color: gray;
     width: 100%;
     position: fixed;
     bottom: 16px;
-    left: 84%;
+    left: 81vw;
     z-index: 3;
   }
