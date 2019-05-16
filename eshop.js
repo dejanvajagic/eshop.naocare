@@ -2,8 +2,10 @@
 // ************************************************
 // Shopping Cart API
 // ************************************************
-
-
+var saldo;
+var totalSaldo;
+var porudzbina;
+var artikliPoruceni;
 var shoppingCart = (function() {
   // =============================
   // Private methods and propeties
@@ -176,13 +178,17 @@ function displayCart() {
   $('.total-count').html(shoppingCart.totalCount());
 
 var artikli ="";
+
  for(var i in cartArray) {
     artikli += "Proizvod: "+cartArray[i].name+"\n"+"Cena: "+ cartArray[i].price+" din."+" komada:x"+cartArray[i].count+"\n";
+    artikliPoruceni += "Proizvod: "+cartArray[i].name+"<br>"+"Cena: "+ cartArray[i].price+" din."+" komada:x"+cartArray[i].count+"<br>";
+    artikliPoruceni = artikli.replace(/(?:\n)/g, '<br>');
 }
 
-var saldo = shoppingCart.totalCart()+" din. \n";
+saldo = shoppingCart.totalCart()+" din. \n";
+totalSaldo = "Saldo: "+shoppingCart.totalCart()+"din.";
 
-var porudzbina = "Porudžbina: "+"\n\n"+artikli+"\n"+saldo;
+porudzbina = "Porudžbina: "+"\n\n"+artikli+"\n"+saldo;
 console.log(porudzbina);
 }
 
@@ -217,4 +223,26 @@ $('.show-cart').on("change", ".item-count", function(event) {
 });
 
 displayCart();
-  
+
+$(".send").click(function(){
+
+  // mailer code
+  var service_id = 'gmail';
+  var template_id = 'template_eMXfaRom';
+  var template_params = {
+    	name: $(".ime-prezime").val(),
+    	reply_email: $(".email").val(),
+    	message: ""+ totalSaldo + "<br><br>" + $(".ime-prezime").val() + "<br>" + $(".adresa").val()  + "<br><br>" + artikliPoruceni + "<br>" +$(".poruka").val()+"<br><br>"+"Korisniku se svidja "+userlikeditems+""
+    };
+    //alert(service_id+template_id+JSON.stringify(template_params, null, 4));
+    emailjs.send(service_id,template_id,template_params);
+    $('#exampleModalCenter').modal('show');
+    $('#modalContactForm').modal('hide');
+    $('#cart-eshop').modal('hide');
+});
+
+$(".potvrda").click(function(){
+  $('#exampleModalCenter').modal('hide');
+  shoppingCart.clearCart();
+  displayCart();
+});

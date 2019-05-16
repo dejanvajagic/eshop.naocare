@@ -108,18 +108,66 @@ $(window).scroll(function(){
        } else {
            $('#buy-button').fadeOut();
        }
+
    });
 
-// mailer code
-// var service_id = 'gmail';
-// var template_id = 'template_eXYdWW2P';
-// var template_params = {
-// 	name: 'John',
-// 	reply_email: 'dejanmail@yahoo.com',
-// 	message: 'This is awesome!'+userlikeditems+""
-// };
-//
-// emailjs.send(service_id,template_id,template_params);
+
+    $(window).scroll(function() {
+       var hT = $('#carousel1-big').offset().top,
+           hH = $('#carousel1-big').outerHeight(),
+           wH = $(window).height(),
+           wS = $(this).scrollTop();
+       if (wS > (hT+hH-wH)){
+         $("#carousel1-big").carousel(0);
+       }});
+
+       $(window).scroll(function() {
+          var hT = $('#carousel1').offset().top,
+              hH = $('#carousel1').outerHeight(),
+              wH = $(window).height(),
+              wS = $(this).scrollTop();
+          if (wS > (hT+hH-wH)){
+            $("#carousel1").carousel(0);
+          }});
+
+          $(window).scroll(function() {
+             var hT = $('#carousel2-big').offset().top,
+                 hH = $('#carousel2-big').outerHeight(),
+                 wH = $(window).height(),
+                 wS = $(this).scrollTop();
+             if (wS > (hT+hH-wH)){
+               $("#carousel2-big").carousel(1);
+             }});
+
+             $(window).scroll(function() {
+                var hT = $('#carousel2').offset().top,
+                    hH = $('#carousel2').outerHeight(),
+                    wH = $(window).height(),
+                    wS = $(this).scrollTop();
+                if (wS > (hT+hH-wH)){
+                  $("#carousel2").carousel(2);
+                }});
+
+                $('.nav-link').on('click', function(){
+
+                       $('.navbar-collapse').collapse('hide');
+                       $('html, body').animate({
+                         scrollTop: $($.attr(this, 'href')).offset().top - 100
+                       }, 10);
+                   });
+
+                   $('.cart-ikonica').on('click', function(){
+
+                          $('.navbar-collapse').collapse('hide');
+
+                      });
+
+                      $('.srce-ikonica').on('click', function(){
+
+                             $('.navbar-collapse').collapse('hide');
+
+                         });
+
 
   //
   //     $.ajax({
