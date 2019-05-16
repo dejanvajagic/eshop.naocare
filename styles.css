@@ -250,8 +250,14 @@ font-size: 0.8rem;
 }
 
 .modal-title2{
-font-size: 0.8rem;
+font-size: 1.2rem;
 }
+
+.modal-body2{
+line-height: 1rem;
+}
+
+
 
 .zatvori{
   position: relative;
