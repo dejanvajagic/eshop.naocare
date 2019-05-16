@@ -241,12 +241,17 @@ bottom: 185px;
 text-align: justify;
 text-justify: inter-word;
 position: relative;
-bottom: 360px;
+bottom: 0px;
+font-size: 0.9rem;
 }
 
 .zatvori{
   position: relative;
   bottom: 70px;
+}
+
+.imgpolarizacija{
+  width: 100%;
 }
 
 .modal-img-footer {
