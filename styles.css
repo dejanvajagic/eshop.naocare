@@ -214,13 +214,17 @@ padding-top: 35px;
 
 .pdv {
 color: gray;
-position: fixed;
+position: absolute;
 top: 8px;
 left: 18px;
 padding-top: 35px;
 font-size: 0.7rem;
 z-index: 6;
 
+}
+
+.korpica{
+  align-content: center;
 }
 
 .btn-unique{
@@ -397,7 +401,7 @@ border-color: gray;
     #carousel1 { display: none; }   /* hide it elsewhere */
     #carousel2 { display: none; }
     #buy-button{left: 93vW !important; bottom: 10px !important; }
-    #button-arrow-up{left: 38.65% !important; top: -3px !important; }
+    #button-arrow-up{right: 10px !important; top: -3px !important; z-index: 5 !important;}
     .info-tekst{
     text-align: justify;
     text-justify: inter-word;

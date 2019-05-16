@@ -112,6 +112,9 @@ $(window).scroll(function(){
    });
 
 
+      });
+
+
     $(window).scroll(function() {
        var hT = $('#carousel1-big').offset().top,
            hH = $('#carousel1-big').outerHeight(),
