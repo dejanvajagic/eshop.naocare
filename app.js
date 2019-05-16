@@ -109,9 +109,6 @@ $(window).scroll(function(){
            $('#buy-button').fadeOut();
        }
 
-   });
-
-
       });
 
 
