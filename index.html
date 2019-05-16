@@ -1335,7 +1335,7 @@
 
 <!-- Moja Korpa Lista Porudžbina -->
 <div class="container-shop demo">
-  <div class="modal right fade" id="cart-eshop" tabindex="0" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal right fade" id="cart-eshop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -1347,12 +1347,12 @@
         <div class="modal-body">
           <table class="show-cart table">
           </table>
-          <div class="total">Ukupno: &nbsp;&nbsp;<span class="total-cart"></span> din. &nbsp;&nbsp;&nbsp;</div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="clear-cart btn btn-dark">Izbriši listu</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Dodaj još proizvoda</button>
-          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalContactForm">Poruči sada</button>
+          <div class="total">Ukupno: &nbsp;&nbsp;<span class="total-cart"></span> din.</div>
+          <button type="button" class="choice clear-cart btn btn-dark">Izbriši<br>listu</button>
+          <button type="button" class="choice btn btn-secondary" data-dismiss="modal">Dodaj još<br>proizvoda</button>
+          <button type="button" class="choice btn btn-dark" data-toggle="modal" data-target="#modalContactForm">Poruči<br>sada</button>
         </div>
       </div>
     </div>
@@ -1392,7 +1392,7 @@
         </div>
       <br>
       </div>
-      <div class="d-flex">
+      <div>
         <button class="send btn btn-dark btn-unique">Poruči</button>
       </div>
     </div>

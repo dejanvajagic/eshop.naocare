@@ -108,11 +108,17 @@ border-radius: 0;
 }
 
 .total{
-float: right;
 position: fixed;
 z-index: 5;
-right: 99px;
-bottom: 84px;
+bottom: 85px;
+color: white;
+left: 36%;
+
+
+}
+
+.choice{
+  width: 30%;
 }
 
 .card-title {
@@ -210,6 +216,9 @@ bottom: 0;
 right: 0;
 background-color: black;
 padding-top: 35px;
+width: 100%;
+display: inline-block;
+text-align: center;
 }
 
 .pdv {
@@ -224,7 +233,7 @@ z-index: 6;
 }
 
 .container-shop{
-  
+
 }
 
 .korpica{
@@ -232,10 +241,9 @@ z-index: 6;
 }
 
 .btn-unique{
-width: 20%;
 position: relative;
-left: 73%;
-bottom: 20px;
+left: 82%;
+bottom: 25px;
 }
 
 .gray{
@@ -290,10 +298,11 @@ margin-bottom: 10px !important;
 	transform: translate3d(125%, 0, 0);
 
 }
+
 .modal.right .modal-dialog {
 	position: fixed;
 	margin: auto;
-	width: 350px;
+	width: 95%;
 	height: 100%;
 	-webkit-transform: translate3d(0%, 0, 0);
 	-ms-transform: translate3d(0%, 0, 0);
@@ -414,6 +423,19 @@ border-color: gray;
     font-size: 0.95rem
     }
 
+    .modal.right .modal-dialog {
+    	position: fixed;
+    	margin: auto;
+    	width: 350px;
+    	height: 100%;
+    	-webkit-transform: translate3d(0%, 0, 0);
+    	-ms-transform: translate3d(0%, 0, 0);
+    	-o-transform: translate3d(0%, 0, 0);
+    	transform: translate3d(0%, 0, 0);
+    }
+   .total{
+    left: 31%;
+   }
   }
 
   @media screen (min-width: 1000px) {
@@ -441,7 +463,6 @@ border-color: gray;
     font-size: 0.8rem;
     }
   }
-
 
   #button-arrow-up{
     width: 100%;

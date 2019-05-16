@@ -112,6 +112,7 @@ $(window).scroll(function(){
       });
 
 
+
     $(window).scroll(function() {
        var hT = $('#carousel1-big').offset().top,
            hH = $('#carousel1-big').outerHeight(),
@@ -168,6 +169,9 @@ $(window).scroll(function(){
 
                          });
 
+  if ($('.total-cart') ==0) {
+  $('.total').css("color", "black");
+  }
 
   //
   //     $.ajax({

@@ -177,6 +177,11 @@ function displayCart() {
   $('.total-cart').html(shoppingCart.totalCart());
   $('.total-count').html(shoppingCart.totalCount());
 
+    if (shoppingCart.totalCart() == 0) {
+        $('.total').css("color", "black");
+    } else {$('.total').css("color", "white");}
+
+
 var artikli ="";
 
  for(var i in cartArray) {
