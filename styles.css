@@ -56,6 +56,7 @@ body {
 }
 
 .cart-ikonica  {
+  border-color: black;
 }
 
 .srce-ikonica  {
@@ -243,6 +244,10 @@ text-justify: inter-word;
 position: relative;
 bottom: 0px;
 font-size: 0.8rem;
+}
+
+.modal-title2{
+font-size: 1rem;
 }
 
 .zatvori{
