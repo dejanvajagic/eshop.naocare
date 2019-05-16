@@ -56,7 +56,10 @@ body {
 }
 
 .cart-ikonica  {
+
   border-color: black;
+
+  border: 3px;
 }
 
 .srce-ikonica  {
@@ -247,7 +250,7 @@ font-size: 0.8rem;
 }
 
 .modal-title2{
-font-size: 1rem;
+font-size: 0.8rem;
 }
 
 .zatvori{
