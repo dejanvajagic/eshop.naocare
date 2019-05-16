@@ -169,10 +169,6 @@ $(window).scroll(function(){
 
                          });
 
-  if ($('.total-cart') ==0) {
-  $('.total').css("color", "black");
-  }
-
   //
   //     $.ajax({
   //         url: "save.php?action=save",
