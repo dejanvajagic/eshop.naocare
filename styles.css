@@ -241,16 +241,8 @@ position: relative;
 bottom: 185px;
 }
 
-.info-tekst{
-text-align: justify;
-text-justify: inter-word;
-position: relative;
-bottom: 0px;
-font-size: 0.8rem;
-}
-
 .modal-title2{
-font-size: 1.5rem;
+font-size: 1.2rem;
 }
 
 .modal-body2{
@@ -400,6 +392,7 @@ border-color: gray;
   @media screen (max-width: 1000px) {
     #carousel1 {  }  /* show it on small screens */
     #carousel2 {  }  /* show it on small screens */
+
   }
 
   @media screen and (min-width: 1000px) {
@@ -407,6 +400,14 @@ border-color: gray;
     #carousel2 { display: none; }
     #buy-button{left: 93vW !important; bottom: 10px !important; }
     #button-arrow-up{left: 38.65% !important; top: -3px !important; }
+    .info-tekst{
+    text-align: justify;
+    text-justify: inter-word;
+    position: relative;
+    bottom: 0px;
+    font-size: 0.95rem
+    }
+
   }
 
   @media screen (min-width: 1000px) {
@@ -424,6 +425,18 @@ border-color: gray;
   @media screen and (max-width: 1000px) {
     #carousel2-big { display: none; }   /* hide it elsewhere */
   }
+
+  @media screen and (max-width: 1000px) {
+    .info-tekst{
+    text-align: justify;
+    text-justify: inter-word;
+    position: relative;
+    bottom: 0px;
+    font-size: 0.93rem;
+    }
+  }
+
+
 
 
   #button-arrow-up{
