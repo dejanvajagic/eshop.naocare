@@ -118,7 +118,7 @@ left: 36%;
 }
 
 .choice{
-  width: 30%;
+  width: 25%;
 }
 
 .card-title {
@@ -439,7 +439,8 @@ border-color: gray;
   }
 
   #dodaj{
-    font-size: 0.9rem;
+    
+    width: 40%;
   }
 
   @media screen (min-width: 1000px) {
