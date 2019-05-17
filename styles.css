@@ -276,11 +276,15 @@ margin-bottom: 0;
 }
 
 .send{
-
 top: 50%;
   left: 50%;
   /* bring your own prefixes */
-  transform: translate(-50%, 6px);
+  transform: translate(-50%, 10px);
+}
+
+input.item-count.form-control{
+  padding-left: 5px;
+  padding-right: 0;
 }
 
 .modal-body2{
