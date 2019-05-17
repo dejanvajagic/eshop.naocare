@@ -248,6 +248,7 @@ bottom: 25px;
 
 .gray{
   color: gray;
+  font-size: 0.85rem;
 }
 
 .video-info{
@@ -257,6 +258,18 @@ bottom: 185px;
 
 .modal-title2{
 font-size: 1rem;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.modal-header2{
+  margin-top: 6;
+  margin-bottom: 6;
+}
+
+.close2{
+  padding-top: 9;
+
 }
 
 .modal-body2{
