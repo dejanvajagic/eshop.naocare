@@ -115,10 +115,15 @@ bottom: 80px;
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -2px);
+  margin-right: 0;
 }
 
 .choice{
   width: 25%;
+}
+
+#exampleModalLabel{
+
 }
 
 .card-title {
@@ -469,6 +474,7 @@ border-color: gray;
      left: 50%;
      /* bring your own prefixes */
      transform: translate(-50%, 50%);
+     margin-right: 0;
    }
   }
 
