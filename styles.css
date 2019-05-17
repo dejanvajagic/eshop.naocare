@@ -269,13 +269,20 @@ margin-bottom: 0;
 
 .close2{
   padding-top: 9;
+  background-color: black;
+  border-color: gray;
+  color: white;
+  border-width: 1px;
+}
+
+.send{
+padding-bottom: 5px;
 
 }
 
 .modal-body2{
-/*line-height: 0.8rem;*/
-}
 
+}
 .mb-5{
 margin-bottom: 10px !important;
 }
