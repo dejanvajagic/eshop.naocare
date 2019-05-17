@@ -110,11 +110,11 @@ border-radius: 0;
 .total{
 position: fixed;
 z-index: 5;
-bottom: 85px;
 color: white;
-left: 36%;
-
-
+bottom: 80px;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -2px);
 }
 
 .choice{
@@ -280,7 +280,7 @@ margin-bottom: 0;
 top: 50%;
   left: 50%;
   /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 6px);
 }
 
 .modal-body2{
@@ -461,7 +461,10 @@ border-color: gray;
     	transform: translate3d(0%, 0, 0);
     }
    .total{
-    left: 31%;
+     bottom: 95px;
+     left: 50%;
+     /* bring your own prefixes */
+     transform: translate(-50%, 50%);
    }
   }
 
@@ -695,3 +698,8 @@ border-color: gray;
   ::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
   ::-webkit-scrollbar-corner { background-color: #3D3D3D;}}
   ::-webkit-resizer { background-color: #3D3D3D;}
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
