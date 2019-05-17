@@ -251,3 +251,7 @@ $(".potvrda").click(function(){
   shoppingCart.clearCart();
   displayCart();
 });
+
+$(".poruci-sada-btn").click(function(){
+  $('#cart-eshop').modal('hide');
+});
