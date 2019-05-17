@@ -108,6 +108,7 @@ border-radius: 0;
 }
 
 .total{
+margin-right: 0;
 position: fixed;
 z-index: 5;
 color: white;
@@ -115,7 +116,6 @@ bottom: 80px;
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -2px);
-  margin-right: 0;
 }
 
 .choice{
@@ -470,11 +470,11 @@ border-color: gray;
     	transform: translate3d(0%, 0, 0);
     }
    .total{
+     margin-right: 0;
      bottom: 95px;
      left: 50%;
      /* bring your own prefixes */
      transform: translate(-50%, 50%);
-     margin-right: 0;
    }
   }
 
