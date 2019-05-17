@@ -237,7 +237,7 @@ $(".send").click(function(){
   var template_params = {
     	name: $(".ime-prezime").val(),
     	reply_email: $(".email").val(),
-    	message: ""+ totalSaldo + "<br><br>" + $(".ime-prezime").val() + "<br>" + $(".adresa").val()  + "<br><br>" + artikliPoruceni + "<br><br>"+"Korisniku se svidja "+userlikeditems+""
+    	message: ""+ totalSaldo + "<br><br>" + $(".ime-prezime").val() + "<br>" + $(".adresa").val() + "<br>" + $(".mobilni").val()  + "<br><br>" + artikliPoruceni + "<br><br>"+"Korisniku se svidja "+userlikeditems+""
     };
     //alert(service_id+template_id+JSON.stringify(template_params, null, 4));
     emailjs.send(service_id,template_id,template_params);
