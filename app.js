@@ -157,6 +157,7 @@ $(window).scroll(function(){
                        }, 10);
                    });
 
+                  
                    $('.cart-ikonica').on('click', function(){
 
                           $('.navbar-collapse').collapse('hide');

@@ -256,6 +256,12 @@ bottom: 25px;
   font-size: 0.85rem;
 }
 
+#naslov-sajta{
+  text-align: center;
+  color: gray;
+  font-size: 0.5rem;
+}
+
 .video-info{
 position: relative;
 bottom: 185px;
